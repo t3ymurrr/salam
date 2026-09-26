@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Azərbaycan Hava Durumu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div>
+                <div class="country">🇦🇿 Azərbaycan</div>
+
+                <h1>Hava Durumu</h1>
+
+                <p id="updated">
+                    Yer seçin
+                </p>
+            </div>
+
+            <button id="unitButton" class="unit-button">
+                °C / °F
+            </button>
+
+        </header>
+
+
+        <!-- SEARCH -->
+        <section class="search-box">
+
+            <label for="locationInput">
+                📍 Şəhər və ya rayon seç
+            </label>
+
+            <div class="search-row">
+
+                <input
+                    id="locationInput"
+                    type="text"
+                    placeholder="Məsələn: Bakı, Quba, Gəncə..."
+                    autocomplete="off"
+                >
+
+                <button id="searchButton">
+                    Axtar
+                </button>
+
+            </div>
+
+            <div id="locationResults"></div>
+
+        </section>
+
+
+        <!-- CURRENT WEATHER -->
+        <section id="currentWeather" class="current-card">
+
+            <div class="welcome">
+
+                <div class="welcome-icon">
+                    🌤️
+                </div>
+
+                <h2>Şəhər və ya rayon seçin</h2>
+
+                <p>
+                    Hava məlumatını görmək üçün
+                    yuxarıdakı axtarışdan yer seçin.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORECAST -->
+        <section class="forecast-section">
+
+            <h2>6 Günlük Proqnoz</h2>
+
+            <div id="forecast" class="forecast-grid"></div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            Weather data: Open-Meteo
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
